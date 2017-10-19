@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan("com.piproject.main")
-public class Webconfig extends WebMvcConfigurerAdapter{
+public class Webconfig extends WebMvcConfigurerAdapter {
     @Bean
     public InternalResourceViewResolver resolver(){
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
