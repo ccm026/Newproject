@@ -20,8 +20,6 @@
           <element id="library" level="project" name="Maven: org.slf4j:log4j-over-slf4j:1.7.25" />
           <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.17" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:1.5.6.RELEASE" />
-          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.16" />
-          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:8.5.16" />
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:8.5.16" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.3.5.Final" />
           <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
@@ -40,6 +38,22 @@
           <element id="library" level="project" name="Maven: org.webjars:bootstrap:3.3.7" />
           <element id="library" level="project" name="Maven: org.webjars:jquery:1.11.1" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/com/pi4j/pi4j-core/1.2-SNAPSHOT/pi4j-core-1.2-20170907.193313-36.jar" output-file-name="pi4j-core-1.2-SNAPSHOT.jar" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-logging-juli:9.0.0.M1" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-jasper:8.5.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:8.5.16" />
+          <element id="library" level="project" name="Maven: org.eclipse.jdt:ecj:3.12.3" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jasper:8.5.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-servlet-api:8.5.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:8.5.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-el-api:8.5.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-api:8.5.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util-scan:8.5.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util:8.5.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jasper-el:8.5.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jsp-api:8.5.16" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.0.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">
