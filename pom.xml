@@ -139,7 +139,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>com.roufid.tutorials.AppTest</mainClass>
+                                <mainClass>com.piproject.main.Application</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
