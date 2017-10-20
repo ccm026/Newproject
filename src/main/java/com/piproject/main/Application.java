@@ -1,13 +1,12 @@
 package com.piproject.main;
 
-import org.apache.catalina.startup.Tomcat;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 
 @SpringBootApplication
-public class Application extends Tomcat {
+public class Application {
 
     public static void main (String[] args) {
 
