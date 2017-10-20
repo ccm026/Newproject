@@ -54,6 +54,8 @@
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jsp-api:8.5.16" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:el-impl:2.2" />
+          <element id="library" level="project" name="Maven: javax.el:el-api:2.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">
