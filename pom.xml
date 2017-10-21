@@ -129,6 +129,13 @@
             <version>8.0.24</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/el-api -->
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>el-api</artifactId>
+            <version>6.0.29</version>
+        </dependency>
+        
     </dependencies>
 
     <build>

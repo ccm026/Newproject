@@ -94,5 +94,6 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jni:8.0.24" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-coyote:8.0.24" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-util:8.0.24" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:el-api:6.0.29" level="project" />
   </component>
 </module>
