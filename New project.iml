@@ -82,7 +82,6 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jasper:8.5.16" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-servlet-api:8.5.16" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-juli:8.5.16" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-el-api:8.5.16" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-api:8.5.16" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-util-scan:8.5.16" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jasper-el:8.5.16" level="project" />
@@ -94,6 +93,6 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jni:8.0.24" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-coyote:8.0.24" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-util:8.0.24" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat:el-api:6.0.29" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-el-api:8.0.8" level="project" />
   </component>
 </module>
