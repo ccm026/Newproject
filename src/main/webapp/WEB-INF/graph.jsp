@@ -23,12 +23,12 @@
                     },
                     axisY: {
                         includeZero: false,
-                        title: "Distance (cm)"
+                       // title: "Distance (cm)"
                     },
 
-                    axisX:{
-                        title: "Time"
-                    },
+                    //axisX:{
+                       // title: "Time"
+                    //},
                     data: [{
                         type: "line",
                         dataPoints: dps
