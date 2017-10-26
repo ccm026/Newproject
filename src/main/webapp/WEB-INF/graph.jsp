@@ -29,6 +29,7 @@
                         title: "Time"
                     }
                 });
+                setInterval(function(){crunchifyData()}, 1000);
                 function crunchifyData() {
                     $.ajax({
                         url : 'run.html',
@@ -46,7 +47,7 @@
 
                 var xVal ;
                 var yVal ;
-                var updateInterval = 1000;
+                //var updateInterval = 1000;
                 var dataLength = 20; // number of dataPoints visible at any point
 
                 var updateChart = function (count) {
@@ -69,7 +70,7 @@
                 };
 
                 //updateChart(dataLength);
-                setInterval(function(){crunchifyData()}, updateInterval);
+
 
             }
         </script>
