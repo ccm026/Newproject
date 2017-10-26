@@ -59,7 +59,7 @@
                             x: xVal,
                             y: yVal
                         });
-                        xVal++;
+                        //xVal++;
                     }
 
                     if (dps.length > dataLength) {
