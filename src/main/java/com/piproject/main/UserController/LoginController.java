@@ -1,4 +1,4 @@
-package com.piproject.main.LoginController;
+package com.piproject.main.UserController;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

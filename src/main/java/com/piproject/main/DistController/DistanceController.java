@@ -1,4 +1,4 @@
-package com.piproject.main.DistanceController;
+package com.piproject.main.DistController;
 
 import com.pi4j.io.gpio.*;
 import org.json.JSONArray;
@@ -55,7 +55,7 @@ public class DistanceController {
                     result.put(data);
 
                     jsonObj.put("measuredData", result);
-                    
+
                 //System.out.println("Distance: "+Distance+"cm");
                 Thread.sleep(1000);
                 }catch (InterruptedException e) {
