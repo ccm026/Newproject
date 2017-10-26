@@ -58,6 +58,9 @@ public class DistanceController {
 
                 //System.out.println("Distance: "+Distance+"cm");
                 Thread.sleep(1000);
+                    gpio.shutdown();
+                    gpio.unprovisionPin(sensorTriggerPin);
+                    gpio.unprovisionPin(sensorEchoPin);
                 }catch (InterruptedException e) {
                     e.printStackTrace();
         }
