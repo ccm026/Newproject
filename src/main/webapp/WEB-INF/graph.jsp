@@ -26,8 +26,8 @@
                         dataPoints: dps
                     }],
                     axisX:{
-                        title: "Time",
-                    },
+                        title: "Time"
+                    }
                 });
                 function crunchifyData() {
                     $.ajax({
