@@ -18,7 +18,7 @@ public class DistanceController {
 
     final static GpioController gpio = GpioFactory.getInstance();
 
-    @RequestMapping("/graph")
+    @RequestMapping(value = "/graph",method = RequestMethod.GET)
     public String graph(){
         return "graph";
     }
