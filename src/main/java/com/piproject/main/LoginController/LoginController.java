@@ -1,4 +1,4 @@
-package com.piproject.main.Controller;
+package com.piproject.main.LoginController;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -34,6 +34,7 @@ public class LoginController {
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public String home (Model model){
+
         model.addAttribute("loggedInUser", "admin");
         return "home";
     }
@@ -43,5 +44,7 @@ public class LoginController {
 
         return "login";
     }
+
+
 }
 

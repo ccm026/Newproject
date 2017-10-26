@@ -140,6 +140,12 @@
             <artifactId>tomcat-el-api</artifactId>
             <version>8.0.8</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.pubnub/pubnub -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20150729</version>
+        </dependency>
 
 
     </dependencies>

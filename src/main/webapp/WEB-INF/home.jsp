@@ -11,7 +11,7 @@
     <title>Home</title>
 </head>
 
-<body style="background-color: snow;">
+<body style="background-color: cornsilk;">
 
 <style type="text/css">
     #element1 {float:left;}
@@ -19,9 +19,10 @@
 </style>
 
 <div id="element1">
-    <h1 style="color: blue;">
+    <h1 style="color: brown;">
         <b>WELCOME</b>
     </h1>
+    <h2><a href="graph">Start Measuring</a></h2>
 </div>
 <div id="element2">
     <div style="float: right">
