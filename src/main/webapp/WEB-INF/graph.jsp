@@ -9,27 +9,25 @@
 <html>
 <head>
     <title>Graph</title>
-    <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-    <script type="text/javascript"
-            src="https://www.gstatic.com/charts/loader.js"></script>
-
         <script>
             window.onload = function () {
 
                 var dps = []; // dataPoints
                 var chart = new CanvasJS.Chart("chartContainer", {
                     title :{
-                        text: "Dynamic Data"
+                        text: "Measured Distance Plot"
                     },
                     axisY: {
-                        includeZero: false
+                        includeZero: false,
+                        title: "Distance (cm)"
                     },
                     data: [{
                         type: "line",
                         dataPoints: dps
-                    }]
+                    }],
+                    axisX:{
+                        title: "Time",
+                    },
                 });
                 function crunchifyData() {
                     $.ajax({
