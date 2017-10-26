@@ -46,7 +46,7 @@
                     });
                 }
 
-                var xVal = 0;
+                var xVal = new Date();
                 var yVal ;
                 var updateInterval = 1000;
                 var dataLength = 20; // number of dataPoints visible at any point
