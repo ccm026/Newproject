@@ -57,10 +57,12 @@ public class DistanceController {
                     jsonObj.put("measuredData", result);
 
                 //System.out.println("Distance: "+Distance+"cm");
-                Thread.sleep(1000);
                     gpio.shutdown();
                     gpio.unprovisionPin(sensorTriggerPin);
                     gpio.unprovisionPin(sensorEchoPin);
+
+                    Thread.sleep(1000);
+
                 }catch (InterruptedException e) {
                     e.printStackTrace();
         }
