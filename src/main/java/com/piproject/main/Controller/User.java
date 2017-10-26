@@ -1,4 +1,4 @@
-package com.piproject.main.UserController;
+package com.piproject.main.Controller;
 
 public class User {
 

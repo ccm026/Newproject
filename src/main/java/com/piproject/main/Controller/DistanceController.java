@@ -1,4 +1,4 @@
-package com.piproject.main.DistController;
+package com.piproject.main.Controller;
 
 import com.pi4j.io.gpio.*;
 import org.json.JSONArray;
