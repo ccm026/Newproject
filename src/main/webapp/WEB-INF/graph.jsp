@@ -9,6 +9,10 @@
 <html>
 <head>
     <title>Graph</title>
+    <script type="text/javascript"
+            src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script
+            src="http://cdn.crunchify.com/wp-content/uploads/code/jquery.sparkline.js"></script>
         <script>
             window.onload = function () {
 
