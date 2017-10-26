@@ -35,14 +35,16 @@
                     }]
                 });
                 function crunchifyData() {
+                    var n = 100;
+                    alert(n);
                     $.ajax({
                         url : 'run.html',
                         dataType : "json",
-                        cache : true,
+                        cache : false,
                         contentType : 'application/json; charset=utf-8',
                         type : 'GET',
                         success : function(result) {
-                            var one = result.measuredData;
+                            var one = result.sparkData;
                             //alert(one);
                             updateChart(one);
                         }
