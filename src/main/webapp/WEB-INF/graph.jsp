@@ -46,21 +46,21 @@
                     });
                 }
 
-                var xVal = 0;
+                var xVal = new Date();
                 var yVal ;
                 var updateInterval = 1000;
                 var dataLength = 20; // number of dataPoints visible at any point
 
                 var updateChart = function (count) {
                        // alert(count);
-                    for (var j = 0; j < count.length; j++) {
-                        //yVal.add(count[j]);
+                    //for (var j = 0; j < count.length; j++) {
+                        yVal = count;
                         dps.push({
                             x: xVal,
                             y: yVal
                         });
-                        xVal++;
-                    }
+                        //xVal++;
+                    //}
 
                     if (dps.length > dataLength) {
                         dps.shift();
