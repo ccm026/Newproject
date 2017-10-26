@@ -23,20 +23,18 @@
                     },
                     axisY: {
                         includeZero: false,
-                       // title: "Distance (cm)"
+                        title: "Distance (cm)"
                     },
 
-                    //axisX:{
-                       // title: "Time"
-                    //},
+                    axisX:{
+                        title: "Time"
+                    },
                     data: [{
                         type: "line",
                         dataPoints: dps
                     }]
                 });
                 function crunchifyData() {
-                    var n = 100;
-                    alert(n);
                     $.ajax({
                         url : 'run.html',
                         dataType : "json",
@@ -44,7 +42,7 @@
                         contentType : 'application/json; charset=utf-8',
                         type : 'GET',
                         success : function(result) {
-                            var one = result.sparkData;
+                            var one = result.measuredData;
                             //alert(one);
                             updateChart(one);
                         }
@@ -58,7 +56,7 @@
 
                 var updateChart = function (count) {
                        // alert(count);
-                    for (var j = 0; j < count.length; j++) {
+                   // for (var j = 0; j < count.length; j++) {
                         yVal = count;
                         xVal = new Date();
                         dps.push({
@@ -66,7 +64,7 @@
                             y: yVal
                         });
                         //xVal++;
-                    }
+                   // }
 
                     if (dps.length > dataLength) {
                         dps.shift();
