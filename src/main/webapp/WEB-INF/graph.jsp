@@ -46,7 +46,7 @@
                     });
                 }
 
-                var xVal = new Date();
+                var xVal ;
                 var yVal ;
                 var updateInterval = 1000;
                 var dataLength = 20; // number of dataPoints visible at any point
@@ -55,6 +55,7 @@
                        // alert(count);
                     for (var j = 0; j < count.length; j++) {
                         yVal = count;
+                        xVal = new Date();
                         dps.push({
                             x: xVal,
                             y: yVal
