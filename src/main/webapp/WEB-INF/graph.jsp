@@ -21,15 +21,15 @@
                         includeZero: false,
                         title: "Distance (cm)"
                     },
+
+                    axisX:{
+                        title: "Time"
+                    },
                     data: [{
                         type: "line",
                         dataPoints: dps
-                    }],
-                    axisX:{
-                        title: "Time"
-                    }
+                    }]
                 });
-                setInterval(function(){crunchifyData()}, 1000);
                 function crunchifyData() {
                     $.ajax({
                         url : 'run.html',
@@ -47,7 +47,7 @@
 
                 var xVal ;
                 var yVal ;
-                //var updateInterval = 1000;
+                var updateInterval = 1000;
                 var dataLength = 20; // number of dataPoints visible at any point
 
                 var updateChart = function (count) {
@@ -70,13 +70,13 @@
                 };
 
                 //updateChart(dataLength);
-
+                setInterval(function(){crunchifyData()}, updateInterval);
 
             }
         </script>
     </head>
 <body>
 <div id="chartContainer" style="height: 370px; width:100%;"></div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </html></html>
