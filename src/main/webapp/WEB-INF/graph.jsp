@@ -22,7 +22,7 @@
                         text: "Measured Distance Plot"
                     },
                     axisY: {
-                        includeZero: false,
+                        //includeZero: false,
                         title: "Distance (cm)"
                     },
 
@@ -55,7 +55,7 @@
                 var dataLength = 20; // number of dataPoints visible at any point
 
                 var updateChart = function (count) {
-                       // alert(count);
+                       alert(count);
                    // for (var j = 0; j < count.length; j++) {
                         yVal = count;
                         xVal = new Date();
