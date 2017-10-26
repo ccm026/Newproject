@@ -15,6 +15,7 @@ public class DistanceController {
     private static GpioPinDigitalOutput sensorTriggerPin ;
     private static GpioPinDigitalInput sensorEchoPin ;
     public double Distance;
+    public float d;
 
     final static GpioController gpio = GpioFactory.getInstance();
 
@@ -49,7 +50,10 @@ public class DistanceController {
                 long endTime= System.nanoTime(); // Store the echo pin HIGH end time to calculate ECHO pin HIGH time.
 
                 Distance =((((endTime-startTime)/1e3)/2) / 29.1); //Printing out the distance in cm
-                   double[] data = {Distance};
+
+                    d = (float) Distance;
+
+                   float[] data = {d};
 
                     distance.put("distance", data);
                     result.put(data);
