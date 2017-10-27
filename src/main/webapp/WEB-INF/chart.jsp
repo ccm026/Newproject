@@ -22,7 +22,7 @@
                     contentType : 'application/json; charset=utf-8',
                     type : 'GET',
                     success : function(result) {
-                        var one = result.measuredData;
+                        var one = parseInt(result.measuredData);
                         //alert(one);
                         drawChart(one);
                     }
