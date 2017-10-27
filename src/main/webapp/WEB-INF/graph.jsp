@@ -58,7 +58,7 @@
                       // alert(count);
                    // for (var j = 0; j < count.length; j++) {
                         yVal = 100;
-                       // alert(yVal);
+                       alert(yVal);
                         xVal = new Date();
                         dps.push({
                             x: xVal,
