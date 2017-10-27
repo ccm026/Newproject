@@ -28,7 +28,7 @@ public class DistanceController {
     @RequestMapping(value = "/run", method = RequestMethod.GET)
     public @ResponseBody
     String run() throws JSONException {
-        
+
 
         JSONObject distance = new JSONObject();
         JSONArray result = new JSONArray();
