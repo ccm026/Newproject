@@ -30,7 +30,7 @@
             }
 
             function drawChart(count) {
-                var xVal = new Date();
+                var xVal = 10;
                 var yVal = count;
                 var data = google.visualization.arrayToDataTable([
                     ['Time', 'Distance(cm)'],
