@@ -28,6 +28,10 @@ public class DistanceController {
     public @ResponseBody
     String run() throws JSONException {
 
+        gpio.shutdown();
+        gpio.unprovisionPin(sensorTriggerPin);
+        gpio.unprovisionPin(sensorEchoPin);
+
         JSONObject distance = new JSONObject();
         JSONArray result = new JSONArray();
         JSONObject jsonObj = new JSONObject();
