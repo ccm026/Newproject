@@ -21,16 +21,14 @@ public class DistanceController {
 
     @RequestMapping(value = "/graph",method = RequestMethod.GET)
     public String graph(){
+
         return "graph";
     }
 
     @RequestMapping(value = "/run", method = RequestMethod.GET)
     public @ResponseBody
     String run() throws JSONException {
-
-        gpio.shutdown();
-        gpio.unprovisionPin(sensorTriggerPin);
-        gpio.unprovisionPin(sensorEchoPin);
+        
 
         JSONObject distance = new JSONObject();
         JSONArray result = new JSONArray();
