@@ -31,6 +31,7 @@
                     },
                     data: [{
                         type: "line",
+                        yValueFormatString: "#,### Units",
                         dataPoints: dps
                     }]
                 });
@@ -67,9 +68,9 @@
                         //xVal++;
                    // }
 
-                  //  if (dps.length > dataLength) {
-                    //    dps.shift();
-                   // }
+                    if (dps.length > dataLength) {
+                        dps.shift();
+                    }
 
                     chart.render();
                 };
