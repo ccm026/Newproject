@@ -22,7 +22,7 @@
                         text: "Measured Distance Plot"
                     },
                     axisY: {
-                        includeZero: false,
+                        includeZero: true,
                         title: "Distance (cm)"
                     },
 

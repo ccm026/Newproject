@@ -74,7 +74,7 @@ public class DistanceController {
         gpio.shutdown();
         gpio.unprovisionPin(sensorTriggerPin);
         gpio.unprovisionPin(sensorEchoPin);
-        
+
         System.out.println("Sending this data to view (graph.jsp): " + jsonObj.toString());
 
         return jsonObj.toString();
