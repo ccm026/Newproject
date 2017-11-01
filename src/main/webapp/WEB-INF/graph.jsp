@@ -58,7 +58,7 @@
                 var updateChart = function (count) {
                       // alert(count);
                    // for (var j = 0; j < count.length; j++) {
-                        yVal = count;
+                        yVal = count.measuredData;
                        alert(yVal);
                         xVal = new Date();
                         dps.push({
