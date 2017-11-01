@@ -31,7 +31,7 @@
                     },
                     data: [{
                         type: "line",
-                        yValueFormatString: "#",
+                      //  yValueFormatString: "#",
                         dataPoints: dps
                     }]
                 });
@@ -43,7 +43,7 @@
                         contentType : 'application/json; charset=utf-8',
                         type : 'GET',
                         success : function(result) {
-                            var one = result.measuredData;
+                            var one = result;
                             //alert(one);
                             updateChart(one);
                         }
