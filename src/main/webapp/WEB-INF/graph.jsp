@@ -22,7 +22,7 @@
                         text: "Measured Distance Plot"
                     },
                     axisY: {
-                        includeZero: true,
+                        includeZero: false,
                         title: "Distance (cm)"
                     },
 
@@ -38,7 +38,7 @@
                     $.ajax({
                         url : 'run.html',
                         dataType : "json",
-                        cache : false,
+                        cache : true,
                         contentType : 'application/json; charset=utf-8',
                         type : 'GET',
                         success : function(result) {
