@@ -31,7 +31,7 @@
                     },
                     data: [{
                         type: "line",
-                        yValueFormatString: "# measuredData",
+                        yValueFormatString: "#",
                         dataPoints: dps
                     }]
                 });
@@ -43,7 +43,7 @@
                         contentType : 'application/json; charset=utf-8',
                         type : 'GET',
                         success : function(result) {
-                            var one = result;
+                            var one = result.measuredData;
                             //alert(one);
                             updateChart(one);
                         }
@@ -58,7 +58,7 @@
                 var updateChart = function (count) {
                       // alert(count);
                    // for (var j = 0; j < count.length; j++) {
-                        yVal = count[0].measuredData;
+                        yVal = count;
                        alert(yVal);
                         xVal = new Date();
                         dps.push({
