@@ -31,7 +31,7 @@
                     },
                     data: [{
                         type: "line",
-                      //  yValueFormatString: "#",
+                        yValueFormatString: "# measuredData",
                         dataPoints: dps
                     }]
                 });
