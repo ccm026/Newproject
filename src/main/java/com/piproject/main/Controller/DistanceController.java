@@ -65,13 +65,16 @@ public class DistanceController {
                    // Thread.sleep(1000);
 
                 //System.out.println("Distance: "+Distance+"cm");
-                    gpio.shutdown();
-                    gpio.unprovisionPin(sensorTriggerPin);
-                    gpio.unprovisionPin(sensorEchoPin);
+
 
                 }catch (InterruptedException e) {
                     e.printStackTrace();
         }
+
+        gpio.shutdown();
+        gpio.unprovisionPin(sensorTriggerPin);
+        gpio.unprovisionPin(sensorEchoPin);
+        
         System.out.println("Sending this data to view (graph.jsp): " + jsonObj.toString());
 
         return jsonObj.toString();
