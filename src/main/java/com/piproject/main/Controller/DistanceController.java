@@ -22,7 +22,7 @@ public class DistanceController {
     @RequestMapping(value = "/graph",method = RequestMethod.GET)
     public String graph(){
 
-        return "chart";
+        return "graph";
     }
 
     @RequestMapping(value = "/run", method = RequestMethod.GET)
