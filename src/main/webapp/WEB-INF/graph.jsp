@@ -57,7 +57,7 @@
                 var updateChart = function (count) {
                       // alert(count);
                    // for (var j = 0; j < count.length; j++) {
-                        yVal = count[0];
+                        yVal = count;
                        alert(yVal);
                         xVal = new Date();
                         dps.push({
@@ -67,9 +67,9 @@
                         //xVal++;
                    // }
 
-                    if (dps.length > dataLength) {
-                        dps.shift();
-                    }
+                  //  if (dps.length > dataLength) {
+                    //    dps.shift();
+                   // }
 
                     chart.render();
                 };
