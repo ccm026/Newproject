@@ -33,6 +33,12 @@ public class DistanceController {
         JSONArray result = new JSONArray();
         JSONObject jsonObj = new JSONObject();
 
+        sensorTriggerPin.setShutdownOptions(true, PinState.LOW, PinPullResistance.OFF);
+        sensorEchoPin.setShutdownOptions(true, PinState.LOW, PinPullResistance.OFF);
+        gpio.shutdown();
+        gpio.unprovisionPin(sensorTriggerPin);
+        gpio.unprovisionPin(sensorEchoPin);
+
         sensorTriggerPin =  gpio.provisionDigitalOutputPin(RaspiPin.GPIO_00); // Trigger pin as OUTPUT
         sensorEchoPin = gpio.provisionDigitalInputPin(RaspiPin.GPIO_02,PinPullResistance.PULL_DOWN); // Echo pin as INPUT
 
