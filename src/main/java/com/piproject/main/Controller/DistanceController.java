@@ -50,11 +50,6 @@ public class DistanceController {
 
                 }
                 long endTime= System.nanoTime(); // Store the echo pin HIGH end time to calculate ECHO pin HIGH time.
-                    
-                    sensorTriggerPin.setShutdownOptions(true, PinState.LOW, PinPullResistance.OFF);
-                    gpio.shutdown();
-                    gpio.unprovisionPin(sensorTriggerPin);
-                    gpio.unprovisionPin(sensorEchoPin);
 
                     Thread.sleep(1000);
 
@@ -76,6 +71,10 @@ public class DistanceController {
                     e.printStackTrace();
         }
 
+        sensorTriggerPin.setShutdownOptions(true, PinState.LOW, PinPullResistance.OFF);
+        gpio.shutdown();
+        gpio.unprovisionPin(sensorTriggerPin);
+        gpio.unprovisionPin(sensorEchoPin);
 
         System.out.println("Sending this data to view (graph.jsp): " + jsonObj.toString());
 
