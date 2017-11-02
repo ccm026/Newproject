@@ -50,7 +50,8 @@ public class DistanceController {
 
                 }
                 long endTime= System.nanoTime(); // Store the echo pin HIGH end time to calculate ECHO pin HIGH time.
-
+                    
+                    sensorTriggerPin.setShutdownOptions(true, PinState.LOW, PinPullResistance.OFF);
                     gpio.shutdown();
                     gpio.unprovisionPin(sensorTriggerPin);
                     gpio.unprovisionPin(sensorEchoPin);
