@@ -43,7 +43,7 @@
                         contentType : 'application/json; charset=utf-8',
                         type : 'GET',
                         success : function(result) {
-                            var one = result;
+                            var one = result.measuredData;
                             //alert(one);
                             updateChart(one);
                         }
@@ -58,7 +58,7 @@
                 var updateChart = function (count) {
                       // alert(count);
                    // for (var j = 0; j < count.length; j++) {
-                       yVal = parseInt(count[0].measuredData);
+                       yVal = parseInt(count);
                        alert(yVal);
                         xVal = new Date();
                         dps.push({
