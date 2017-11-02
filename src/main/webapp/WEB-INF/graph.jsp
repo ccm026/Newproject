@@ -31,7 +31,6 @@
                     },
                     data: [{
                         type: "line",
-                        yValueFormatString: "# measuredData",
                         dataPoints: dps
                     }]
                 });
@@ -59,7 +58,8 @@
                       // alert(count);
                    // for (var j = 0; j < count.length; j++) {
                        yVal = parseInt(count);
-                       alert(yVal);
+                       document.write(count);
+                      // alert(yVal);
                         xVal = new Date();
                         dps.push({
                             x: xVal,

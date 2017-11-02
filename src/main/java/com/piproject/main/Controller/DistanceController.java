@@ -15,7 +15,7 @@ public class DistanceController {
     private static GpioPinDigitalOutput sensorTriggerPin ;
     private static GpioPinDigitalInput sensorEchoPin ;
     private double Distance;
-    private int d;
+    private float d;
 
     final static GpioController gpio = GpioFactory.getInstance();
 
@@ -55,19 +55,18 @@ public class DistanceController {
                     gpio.unprovisionPin(sensorTriggerPin);
                     gpio.unprovisionPin(sensorEchoPin);
 
+                    Thread.sleep(1000);
 
                     Distance =((((endTime-startTime)/1e3)/2) / 29.1); //Printing out the distance in cm
 
-                    d = (int) Distance;
+                    d = (float) Distance;
 
-                   int[] data = {d};
+                   float[] data = {d};
 
                     distance.put("distance", data);
                     result.put(data);
 
                     jsonObj.put("measuredData", result);
-
-                   // Thread.sleep(1000);
 
                 //System.out.println("Distance: "+Distance+"cm");
 
