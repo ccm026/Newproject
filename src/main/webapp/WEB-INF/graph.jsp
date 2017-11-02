@@ -48,7 +48,6 @@
                         }
                     });
                 }
-
                 var xVal ;
                 var yVal ;
                 var updateInterval = 1000;
@@ -58,8 +57,7 @@
                       // alert(count);
                    // for (var j = 0; j < count.length; j++) {
                        yVal = parseInt(count);
-                       document.write(count);
-                      // alert(yVal);
+                       alert(count);
                         xVal = new Date();
                         dps.push({
                             x: xVal,
