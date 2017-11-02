@@ -29,7 +29,6 @@ public class DistanceController {
     public @ResponseBody
     String run() throws JSONException {
 
-
         JSONObject distance = new JSONObject();
         JSONArray result = new JSONArray();
         JSONObject jsonObj = new JSONObject();
@@ -52,6 +51,11 @@ public class DistanceController {
                 long endTime= System.nanoTime(); // Store the echo pin HIGH end time to calculate ECHO pin HIGH time.
 
                     //Thread.sleep(1000);
+                    sensorTriggerPin.setShutdownOptions(true, PinState.LOW, PinPullResistance.OFF);
+                    sensorEchoPin.setShutdownOptions(true, PinState.LOW, PinPullResistance.OFF);
+                    gpio.shutdown();
+                    gpio.unprovisionPin(sensorTriggerPin);
+                    gpio.unprovisionPin(sensorEchoPin);
 
                     Distance =((((endTime-startTime)/1e3)/2) / 29.1); //Printing out the distance in cm
 
@@ -71,10 +75,6 @@ public class DistanceController {
                     e.printStackTrace();
         }
 
-        sensorTriggerPin.setShutdownOptions(true, PinState.LOW, PinPullResistance.OFF);
-        gpio.shutdown();
-        gpio.unprovisionPin(sensorTriggerPin);
-        gpio.unprovisionPin(sensorEchoPin);
 
         System.out.println("Sending this data to view (graph.jsp): " + jsonObj.toString());
 
