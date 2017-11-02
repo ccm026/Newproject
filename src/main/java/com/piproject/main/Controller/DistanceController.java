@@ -51,7 +51,7 @@ public class DistanceController {
                 }
                 long endTime= System.nanoTime(); // Store the echo pin HIGH end time to calculate ECHO pin HIGH time.
 
-                    Thread.sleep(1000);
+                    //Thread.sleep(1000);
 
                     Distance =((((endTime-startTime)/1e3)/2) / 29.1); //Printing out the distance in cm
 
