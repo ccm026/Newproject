@@ -58,7 +58,7 @@
                 var updateChart = function (count) {
                       // alert(count);
                    // for (var j = 0; j < count.length; j++) {
-                        yVal = count.measuredData;
+                       yVal = parseInt(count[0].measuredData);
                        alert(yVal);
                         xVal = new Date();
                         dps.push({
@@ -84,5 +84,6 @@
 <body>
 <div id="chartContainer" style="height: 370px; width:100%;"></div>
 <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
 </body>
 </html></html>
