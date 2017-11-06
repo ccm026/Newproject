@@ -43,7 +43,6 @@
                         type : 'GET',
                         success : function(result) {
                             var one = result.measuredData;
-                            //alert(one);
                             updateChart(one);
                         }
                     });
@@ -54,8 +53,6 @@
                 var dataLength = 20; // number of dataPoints visible at any point
 
                 var updateChart = function (count) {
-                      // alert(count);
-                   // for (var j = 0; j < count.length; j++) {
                        yVal = parseInt(count);
                        alert(count);
                         xVal = new Date();
@@ -63,8 +60,6 @@
                             x: xVal,
                             y: yVal
                         });
-                        //xVal++;
-                   // }
 
                     if (dps.length > dataLength) {
                         dps.shift();
@@ -73,7 +68,6 @@
                     chart.render();
                 };
 
-                //updateChart(dataLength);
                 setInterval(function(){crunchifyData()}, updateInterval);
 
             }
